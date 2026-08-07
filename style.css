@@ -1,0 +1,339 @@
+:root {
+    --heading1-color: #D4AF37;
+    --heading1-size: 35px;
+    --heading2-color: #FFFFFF;
+    --F-color: #CFCFCF;
+    --section-color: #1A1A1A;
+    --F-weight: 600;
+    --F-padding: 20px 0px;
+    --align: center;
+    --section-align: left;
+    --section-heading-size: 25px;
+    --section-font-size: 16px;
+    --F-size: 18px;
+    --Heading-padding: 40px 0px 20px 0px;
+    --button-color: #B68D24;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #111111;
+}
+
+h2 {
+    text-align: var(--align);
+    color: var(--heading1-color);
+    font-size: var(--heading1-size);
+    padding: var(--Heading-padding);
+}
+
+h3 {
+    color: var(--heading2-color);
+    text-align: var(--align);
+}
+
+p {
+    color: var(--F-color);
+    text-align: var(--align);
+    padding: var(--F-padding);
+    font-size: var(--F-size);
+}
+
+.btn {
+    display: inline-block;
+    background: #B68D24;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: #D4AF37;
+}
+
+.menu-card,
+.about-card,
+.about-card2,
+.gallery-card {
+    transition: .3s;
+}
+
+.menu-card:hover,
+.about-card:hover,
+.about-card2:hover,
+.gallery-card:hover {
+    box-shadow: #B68D24 0px 0px 20px;
+}
+
+/* Header-Sect-CSS */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #0B0B0B;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: var(--heading1-color);
+}
+
+header a {
+    color: #FFFFFF;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: var(--F-weight);
+}
+
+header a:hover {
+    color: #D4AF37;
+}
+
+/* Hero-Sect-CSS */
+
+.background-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)),
+        url(images/Background-image.jpg);
+    background-size: cover;
+    height: 90vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-image h3 {
+    padding: 10px;
+    color: var(--heading2-color);
+    text-align: left;
+}
+
+.background-image h2 {
+    color: var(--heading1-color);
+    text-align: var(--align);
+    padding: 120px 0px 0px 0px;
+    font-size: 40px;
+}
+
+.background-image p {
+    color: var(--F-color);
+    text-align: var(--align);
+    font-size: var(--F-size);
+    padding: 5px;
+}
+
+.background-image .btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    width: 140px;
+    padding: 10px;
+    background-color: var(--button-color);
+    border-radius: 16px;
+}
+
+.background-image .btn:hover {
+    box-shadow: #0B0B0B 0px 0px 20px;
+}
+
+.background-image a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: var(--F-weight);
+
+}
+
+/* Menu-Sect-CSS */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    height: 500px;
+    width: 350px;
+    background-color: var(--section-color);
+    border-radius: 16px;
+    margin: 20px;
+}
+
+
+.menu-card img {
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    object-fit: cover;
+}
+
+.menu-card h2 {
+    text-align: var(--section-align);
+    color: var(--heading1-color);
+    font-size: var(--section-heading-size);
+    padding: 10px;
+}
+
+.menu-card p {
+    text-align: var(--section-align);
+    color: var(--F-color);
+    padding: 10px;
+    font-size: var(--section-font-size);
+}
+
+.menu-card span {
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: var(--F-weight);
+    display: block;
+}
+
+
+.menu-card a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: var(--F-weight);
+}
+
+/* About-Sect */
+
+.about-card {
+    height: 400px;
+    width: 500px;
+    border-radius: 16px;
+    margin: 20px;
+    background-color: var(--section-color);
+}
+
+
+.about-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.about-card h2 {
+    text-align: var(--section-align);
+    font-size: var(--section-heading-size);
+    color: var(--heading1-color);
+    padding: 10px;
+}
+
+.about-card h3 {
+    text-align: var(--section-align);
+    padding: 0px 10px;
+}
+
+.about-card p {
+    text-align: var(--section-align);
+    color: var(--F-color);
+    font-size: var(--section-font-size);
+    padding: 10px;
+}
+
+
+/* About-Us2 */
+
+.about-card2 {
+    height: 200px;
+    width: 250px;
+    background-color: var(--section-color);
+    border-radius: 16px;
+    margin: 20px;
+}
+
+
+.about-card2 h2 {
+    text-align: var(--section-align);
+    color: var(--heading1-color);
+    padding: 10px;
+    font-size: var(--section-heading-size);
+}
+
+.about-card2 p {
+    text-align: var(--section-align);
+    color: var(--F-color);
+    padding: 10px;
+    font-size: var(--section-font-size);
+}
+
+/* Gellery-Sect-CSS */
+
+.gallery-card {
+    height: 300px;
+    width: 350px;
+    border-radius: 16px;
+    margin: 20px;
+}
+
+
+.gallery-card img {
+    height: 100%;
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Contact-Sect-CSS */
+
+.contact p {
+    padding: 10px;
+}
+
+/* Footer-CSS */
+
+footer {
+    background-color: #0B0B0B;
+    text-align: center;
+}
+
+footer p {
+    padding: 5px;
+
+}
+
+
+/* Media-Querry */
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    header {
+        display: block;
+    }
+
+    header a {
+        padding: 5px;
+    }
+
+    .about-card {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+    header {
+        flex-direction: column;
+    }
+
+    header a {
+        padding: 10px;
+    }
+}
