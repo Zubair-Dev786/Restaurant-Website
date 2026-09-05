@@ -6,29 +6,30 @@ A modern and responsive restaurant landing page built using **HTML5** and **CSS3
 
 ## ✨ Features
 
-- Responsive Design
-- Modern Dark Theme
-- Sticky Navigation Bar
-- Hero Section
-- Featured Menu
-- About Us Section
-- Why Choose Us
-- Gallery Section
-- Contact Information
-- Smooth Scrolling
-- Hover Effects
+* Responsive Design
+* Modern Dark Theme
+* Hero Section
+* Featured Menu
+* About Us Section
+* Gallery Section
+* Contact Information
+* Smooth Scrolling
+* Hover Effects
 
 ---
 
 ## 🛠️ Built With
 
-- HTML5
-- CSS3
-- Flexbox
-- Media Queries
+* HTML5
+* CSS3
+* Flexbox
+* Media Queries
 
 ---
 
+## 🔗 Live Demo
+
+[View Live Website](https://zubair-dev786.github.io/Restaurant-Website/)
 
 ---
 
@@ -41,7 +42,6 @@ This project was created to practice responsive web design, Flexbox, reusable CS
 ## 👨‍💻 Author
 
 **Zubair Ahmed** ( Zubair-Dev786 )
-
 
 ---
 
